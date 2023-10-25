@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Red DTI-ar Home</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <style>
+        .header-text {
+            position: absolute;
+            top: 50%; /* Centra verticalmente el texto en la parte superior */
+            left: 10%; /* Ajusta el espacio desde el lado izquierdo */
+            transform: translateY(-50%);
+        }
+
+        .btn-group {
+            position: absolute;
+            top: 70%;
+            left: 1%;
+        }
+
+        .footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .footer p {
+            margin-bottom: 0; /* Elimina el margen inferior de los párrafos para que estén juntos en la misma fila */
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporción 16:9 para videos */
+            height: 0;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+  </head>
+  <body class="bg">
+    <nav class="navbar navbar-expand-lg py-1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo_red_dti_clarito 1.png" alt="Bootstrap">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Red DTI-ar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./sup_pages/autoridades.html">Autoridades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./sup_pages/acciones.html">Acciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./sup_pages/iniciativas.html">Iniciativas</a>
+              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link text-white" href="./sup_pages/iniciativas.html">Libro</a>
+              </li>-->
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./sup_pages/contacto.html">Contacto</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container position-relative py-4 px-3 mx-auto text-white">
+        <!--<div class="header-text">
+            <h1>Red Argentina de Destinos Turísticos Inteligentes</h1>
+            <h6>Un espacio para vincular, intercambiar y potenciar el desarrollo de los Destinos Turísticos de Argentina.</h6>
+        </div>-->
+
+        <img src="./img/banner_lared.png" class="img-fluid banner_red" alt="imagen La red">
+        <img src="./img/banner_unete.png" class="img-fluid banner_unete" alt="imagen Unete">
+        <img src="./img/banner_acciones.png" class="img-fluid banner_acciones" alt="imagen Acciones">
+
+        <div class="row btn-group">
+          <div class="col">
+              <img id="image1" src="./img/btn_red_active.png" class="img-fluid custom-img" alt="Imagen 1">
+          </div>
+          <div class="col">
+              <img id="image2" src="./img/btn_unete_desactive.png" class="img-fluid custom-img" alt="Imagen 2">
+          </div>
+          <div class="col">
+              <img id="image3" src="./img/btn_acciones_desactive.png" class="img-fluid custom-img" alt="Imagen 3">
+          </div>
+      </div>
+
+      <body>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Video ocupando 2/3 del ancho a la izquierda -->
+                <div class="col-md-8">
+                    <div class="video-container mt-5">
+                        <!-- Reemplaza 'URL_DEL_VIDEO' con la URL de tu video -->
+                        <video src="./video/video_red.mp4" width="360" height="640" controls></video>
+                    </div>
+                </div>
+    
+                <!-- Columna ocupando 1/3 del ancho a la derecha -->
+                <div class="col-md-4 py-4">
+                    <div class="text-center my-4">
+                        <h3>¿Qué es un destino turístico inteligente?</h3>
+                        <p>Es un destino que gestiona adecuada y coordinadamente la información de las estrategias que mejoren su <b>sostenibilidad, accesibilidad y resiliencia</b>, impactando directamente en la calidad de vida de los ciudadanos y en la experiencia turística de los visitantes.
+                          En un DTI se considera el concepto de <b>“inteligencia”</b>  como la capacidad de gestionar datos y generar información y conocimiento para la toma de decisiones de un destino turístico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-5">
+          <h3 class="text-center">¿Qué es la Red Argentina de Destinos Turísticos Inteligentes (Red DTI-Ar)?</h3>
+                
+          <div class="row">
+            <div class="col-md-6 mt-4">
+              <img src="./img/img_red.png" alt="imagen de la red" width="400px">
+            </div>
+
+            <div class="col-md-6 py-4">
+              <div class="text-center my-4">
+                  <p>Hace unos pocos años, en medio de la situación confusa y desalentadora que la pandemia del Covid colocó al turismo, decidimos lanzarnos en la aventura de conformar una red de municipios pensada por y para los gestores públicos de turismo. El desafío era enorme y el contexto muy adverso.
+                    No obstante, la situación de desconcierto e incertidumbre en que el turismo se vio inmerso de manera precipitada, colocó a los gestores municipales de turismo en una situación por demás alarmante. Eran ellos quienes día a día debían enfrentar, en primera línea, las situaciones más complejas.
+                    En este contexto la creación de la Red Argentina de Destinos turísticos Inteligentes (Red DTI-Ar), bajo la mirada de la inteligencia turísticas en la gestión, fue un espacio de contención muy fuerte y seguro, donde los gestores pudieron interactuar, nutrirse de información y documentación, entre otras acciones, para en conjunto salir airosos de una situación de coyuntura muy compleja.
+                    Hoy nuestra red cuenta con una enorme cantidad de municipios formalmente adheridos, provincias adheridas, y un volumen muy importante de organizaciones académicas, empresariales, profesionales del sector y organismos de referencia que se han sumado activamente a nuestra red.</p>
+              </div>
+            </div>
+
+          </div>        
+          
+        </div>
+
+        <div class="container-fuid mt-5">
+          <h3 class="text-center mt-5">¿Por qué impulsar Destinos Turísticos Inteligentes?</h3>
+          <p class="text-center"><b>La implementación del modelo de destinos inteligentes permite una mayor profesionalización de la gestión del destino, permitiendo:</b></p>
+           <p class="text-center mt-2 mb-5">
+            - Oportunidades para el desarrollo de las personas que habitan el territorio dentro del sector turístico, contemplando a la inclusión y accesibilidad universal como pilares claves.
+            - Mejorar la experiencia de los visitantes en destino, potenciada a través de la innovación y la aplicación de herramientas tecnológicas.
+            - Promover una mejor calidad de vida de los residentes, mitigando los efectos no deseados de la actividad turística.
+            - Tomar mejores decisiones gracias al manejo y análisis de datos.
+           </p> 
+          </div>
+
+          <div class="container-fluid mt-5">
+            <h3 class="text-center">Ejes temáticos de trabajo</h3>
+            <div class="espacio mb-5"></div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Gobernanza</h5>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Sostenibilidad</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Accesibilidad plena y universal</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Movilidad y transporte</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">TICs</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title text-center"> Marketing y Trasnformación Digital</h5>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="espacio mb-5"></div>
+            <div class="espacio mb-5"></div>
+
+          </div>
+
+
+
+    <!-- Footer fijo en la parte inferior -->
+    <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col">🌎 Argentina</div>
+              <div class="col">✉️ info@reddti-ar.com.ar</div>
+              <div class="col">📱 +54 9 221 5452092</div>
+          </div>
+      </div>
+  </div>
+
+  </body>
+  <script>
+        $(document).ready(function() {
+        // Cuando se hace clic en las imágenes
+        $('#image1').click(function() {
+          $('.banner_unete').hide();
+          $('.banner_acciones').hide();
+            // Muestra el banner correspondiente
+            $('.banner_red').show();
+            // Cambia las otras imágenes a la versión inactiva
+            $(this).attr('src', './img/btn_red_active.png');
+            $('#image2').attr('src', './img/btn_unete_desactive.png');
+            $('#image3').attr('src', './img/btn_acciones_desactive.png');
+        });
+
+        $('#image2').click(function() {
+          $('.banner_red').hide();
+          $('.banner_acciones').hide();
+            // Muestra el banner correspondiente
+            $('.banner_unete').show();
+            $(this).attr('src', './img/btn_unete_active.png');
+            $('#image1').attr('src', './img/btn_red_desactive.png');
+            $('#image3').attr('src', './img/btn_acciones_desactive.png');
+        });
+
+        $('#image3').click(function() {
+          $('.banner_red').hide();
+          $('.banner_unete').hide();
+            // Muestra el banner correspondiente
+            $('.banner_acciones').show();
+            $(this).attr('src', './img/btn_acciones_active.png');
+            $('#image1').attr('src', './img/btn_red_desactive.png');
+            $('#image2').attr('src', './img/btn_unete_desactive.png');
+        });
+    });
+  </script>
+</html>

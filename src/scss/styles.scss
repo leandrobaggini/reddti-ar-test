@@ -1,0 +1,24 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+.bg {
+    background-color: #083453;
+    overflow-x: hidden;
+}
+
+.custom-btn{
+    width: 345px;
+    height: 50px;
+    border-radius: 0;
+    background-color: #162B40;
+    border-color: #162B40;
+}
+
+.banner_unete{
+    display: none;
+}
+
+.banner_acciones{
+    display: none;
+}
+
